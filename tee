@@ -1,0 +1,32 @@
+
+> @robcross1977/kjv-search@0.0.5 build
+> prisma generate && prisma db push && prisma db seed && rm -rf ./dist && tsc log.txt
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+
+✔ Generated Prisma Client (4.7.1 | library) to .\node_modules\@prisma\client in 48ms
+You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+```
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
+```
+
+warn Versions of prisma@4.8.0 and @prisma/client@4.7.1 don't match.
+This might lead to unexpected behavior.
+Please make sure they have the same version.
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": CockroachDB database "defaultdb", schema "public" at "kjv-search-7666.7tt.cockroachlabs.cloud:26257"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (4.7.1 | library) to .\node_modules\@prisma\client in 
+45ms
+
+Environment variables loaded from .env
+Running seed command `ts-node ./src/seed/seed` ...
+Starting book 1 Chronicles
+Creating book 1 Chronicles

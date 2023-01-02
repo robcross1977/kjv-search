@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+  // provider = "sqlite"
+  // url = "file:./kjv.db"
+}
+
+model Book {
+  name     String    @unique
+  chapters Chapter[]
+
+  @@map("books")
+}
+
+model Chapter {
+  number   Int
+  bookName String
+  book     Book    @relation(fields: [bookName], references: [name])
+  verses   Verse[]
+
+  @@unique([number, bookName])
+  @@map("chapters")
+}
+
+model Verse {
+  number        Int
+  text          String
+  chapterNumber Int
+  bookName      String
+  chapter       Chapter @relation(fields: [chapterNumber, bookName], references: [number, bookName])
+
+  @@unique([bookName, chapterNumber, number])
+  @@map("verses")
+}

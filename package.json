@@ -1,6 +1,6 @@
 {
   "name": "@robcross1977/kjv-search",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "description": "A library for searching through the King James Version of the bible and returning the corresponding books/chapters and verses",
   "main": "dist/index.js",
   "type": "commonjs",

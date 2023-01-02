@@ -19,7 +19,8 @@ The purpose of this library is two-fold.
 
 1. Add a .env file to the root of the project.
 2. Add an entry to the env file for the database connection string
-   1. `DATABASE_URL=<connection string here>`
+   1. `DATABASE_URL=<db_type>://<username>:<password>@<domain>:<port>/defaultdb?sslmode=verify-full`
+      1. Ex: `postgresql://guy:abc123@kjv-search.cloud:1234/defaultdb?sslmode=verify-full'`
 3. Run the command `npm run build`
 
 ## SqlLite DB
@@ -28,6 +29,11 @@ If you want to use sqlite you can change the file `./prisma/schema.prisma` to re
 
 This is unnecessary if you just want a sqlite database file to use for your application. I've included it pre-built in `./prisma/kjv.db` and you are welcome to make a copy.
 
-# Query
+## Search
 
-# Component
+<TODO>
+
+### Coming Attractions
+
+1. A basic search component
+2. A bible memorization component that leads the user through various memorization exericses based on input in the form of bible search strings.

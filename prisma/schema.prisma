@@ -19,7 +19,7 @@ model Book {
 model Chapter {
   number   Int
   bookName String
-  book     Book    @relation(fields: [bookName], references: [name])
+  book     Book    @relation(fields: [bookName], references: [name], onDelete: Cascade)
   verses   Verse[]
 
   @@unique([number, bookName])
@@ -31,7 +31,7 @@ model Verse {
   text          String
   chapterNumber Int
   bookName      String
-  chapter       Chapter @relation(fields: [chapterNumber, bookName], references: [number, bookName])
+  chapter       Chapter @relation(fields: [chapterNumber, bookName], references: [number, bookName], onDelete: Cascade)
 
   @@unique([bookName, chapterNumber, number])
   @@map("verses")

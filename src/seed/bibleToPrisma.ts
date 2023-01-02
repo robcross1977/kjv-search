@@ -1,5 +1,5 @@
 import { Prisma } from "@prisma/client";
-import { Book, Chapter, Verse } from "../types";
+import { Book, Chapter, Verse } from "../lib/types";
 
 export const bibleToPrisma = (book: Book): Prisma.BookCreateArgs => {
   return {

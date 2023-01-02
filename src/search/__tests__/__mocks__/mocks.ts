@@ -1,5 +1,5 @@
 import { Prisma } from "@prisma/client";
-import { Book } from "../../../types";
+import { Book } from "../../../lib/types";
 
 export const searchMocks: {
   search: string;

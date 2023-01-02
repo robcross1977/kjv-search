@@ -1,4 +1,4 @@
-import { Book } from "../../types";
+import { Book } from "../../lib/types";
 
 const Malachi: Book = {
   name: "Malachi",

@@ -1,5 +1,5 @@
 import { getRangeFrom } from "../lib/array";
-import { Book, Chapter, Verse } from "../types";
+import { Book, Chapter, Verse } from "../lib/types";
 
 const buildSearch = (bookName: string, params: string): Book | undefined => {
   if (hasNonConsecutiveVerses(params)) {

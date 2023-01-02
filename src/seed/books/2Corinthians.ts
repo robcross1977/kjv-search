@@ -1,4 +1,4 @@
-import { Book } from "../../types";
+import { Book } from "../../lib/types";
 
 const TwoCorinthians: Book = {
   name: "2 Corinthians",

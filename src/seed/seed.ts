@@ -1,5 +1,5 @@
 import prisma from "../lib/prisma";
-import { Book } from "../types";
+import { Book } from "../lib/types";
 import { bibleToPrisma } from "./bibleToPrisma";
 
 // Book Objects

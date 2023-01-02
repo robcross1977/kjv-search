@@ -1,4 +1,4 @@
-import { Book } from "../../types";
+import { Book } from "../../lib/types";
 
 const ThreeJohn: Book = {
   name: "3 John",

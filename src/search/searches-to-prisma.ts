@@ -1,5 +1,5 @@
 import { Prisma } from "@prisma/client";
-import { Book } from "../types";
+import { Book } from "../lib/types";
 
 const toPrisma = (searches: Book[]): Prisma.BookFindManyArgs[] =>
   searches.reduce<Array<any>>((acc, search) => {

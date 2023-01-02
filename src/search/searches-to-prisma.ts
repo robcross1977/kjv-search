@@ -29,7 +29,7 @@ const formatSearch = (
       chapters: selectPrismaChapters(book, chapter, verses),
     },
     where: {
-      name: { startsWith: book },
+      name: { startsWith: book, mode: "insensitive" },
     },
   };
 };
@@ -50,7 +50,7 @@ const selectPrismaChapters = (
         where: {
           AND: [
             {
-              bookName: { startsWith: book },
+              bookName: { startsWith: book, mode: "insensitive" },
             },
             {
               number: chapter,
@@ -81,7 +81,7 @@ const selectPrismaVerses = (
         where: {
           AND: [
             {
-              bookName: { startsWith: book },
+              bookName: { startsWith: book, mode: "insensitive" },
             },
             {
               number: {

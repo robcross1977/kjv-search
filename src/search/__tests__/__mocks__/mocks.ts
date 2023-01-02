@@ -27,7 +27,7 @@ export const searchMocks: {
             orderBy: { number: "asc" },
           },
         },
-        where: { name: { startsWith: "2 Peter" } },
+        where: { name: { startsWith: "2 Peter", mode: "insensitive" } },
       },
     ],
     sqlResult: [
@@ -453,6 +453,7 @@ export const searchMocks: {
               {
                 bookName: {
                   startsWith: "Song Of Solomon",
+                  mode: "insensitive",
                 },
               },
               {
@@ -465,6 +466,7 @@ export const searchMocks: {
       where: {
         name: {
           startsWith: "Song Of Solomon",
+          mode: "insensitive",
         },
       },
     },
@@ -575,6 +577,7 @@ export const searchMocks: {
                     {
                       bookName: {
                         startsWith: "1 Samuel",
+                        mode: "insensitive",
                       },
                     },
                     {
@@ -594,6 +597,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 Samuel",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -606,6 +610,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 Samuel",
+            mode: "insensitive",
           },
         },
       },
@@ -670,6 +675,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 John",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -682,6 +688,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 John",
+            mode: "insensitive",
           },
         },
       },
@@ -703,6 +710,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 John",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -715,6 +723,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 John",
+            mode: "insensitive",
           },
         },
       },
@@ -736,6 +745,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 John",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -748,6 +758,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 John",
+            mode: "insensitive",
           },
         },
       },
@@ -1262,6 +1273,7 @@ export const searchMocks: {
                   {
                     bookName: {
                       startsWith: "1 Samuel",
+                      mode: "insensitive",
                     },
                   },
                   {
@@ -1281,6 +1293,7 @@ export const searchMocks: {
               {
                 bookName: {
                   startsWith: "1 Samuel",
+                  mode: "insensitive",
                 },
               },
               {
@@ -1293,6 +1306,7 @@ export const searchMocks: {
       where: {
         name: {
           startsWith: "1 Samuel",
+          mode: "insensitive",
         },
       },
     },
@@ -1368,6 +1382,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 John",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -1380,6 +1395,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 John",
+            mode: "insensitive",
           },
         },
       },
@@ -1401,6 +1417,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 John",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -1413,6 +1430,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 John",
+            mode: "insensitive",
           },
         },
       },
@@ -1434,6 +1452,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 John",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -1446,6 +1465,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 John",
+            mode: "insensitive",
           },
         },
       },
@@ -1467,6 +1487,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 John",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -1479,6 +1500,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 John",
+            mode: "insensitive",
           },
         },
       },
@@ -2066,6 +2088,7 @@ export const searchMocks: {
                   {
                     bookName: {
                       startsWith: "1 Samuel",
+                      mode: "insensitive",
                     },
                   },
                   {
@@ -2085,6 +2108,7 @@ export const searchMocks: {
               {
                 bookName: {
                   startsWith: "1 Samuel",
+                  mode: "insensitive",
                 },
               },
               {
@@ -2097,6 +2121,7 @@ export const searchMocks: {
       where: {
         name: {
           startsWith: "1 Samuel",
+          mode: "insensitive",
         },
       },
     },
@@ -2169,6 +2194,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 Samuel",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -2181,6 +2207,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 Samuel",
+            mode: "insensitive",
           },
         },
       },
@@ -2202,6 +2229,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 Samuel",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -2214,6 +2242,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 Samuel",
+            mode: "insensitive",
           },
         },
       },
@@ -2235,6 +2264,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 Samuel",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -2247,6 +2277,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 Samuel",
+            mode: "insensitive",
           },
         },
       },
@@ -2708,6 +2739,7 @@ export const searchMocks: {
                     {
                       bookName: {
                         startsWith: "1 Chronicles",
+                        mode: "insensitive",
                       },
                     },
                     {
@@ -2727,6 +2759,7 @@ export const searchMocks: {
                 {
                   bookName: {
                     startsWith: "1 Chronicles",
+                    mode: "insensitive",
                   },
                 },
                 {
@@ -2739,6 +2772,7 @@ export const searchMocks: {
         where: {
           name: {
             startsWith: "1 Chronicles",
+            mode: "insensitive",
           },
         },
       },
